@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+ <mapper namespace="pe.com.sanpedro.mybatis.mapper.PacienteMapper">
+ 
+ 
+ 	<insert id="registrar" parameterType="pe.com.sanpedro.model.paciente">
+ 		
+ 	INSERT INTO paciente VALUES (null,
+ 	#{nombreCompleto},
+ 	#{dni},
+ 	#{correo},
+ 	#{direccion},
+ 	#{fecha_nacimiento},
+ 	#{clave},
+ 	#{celular},
+ 	#{estado})
+ 	
+ 	</insert>
+ 	
+ 	
+ 	
+ </mapper>

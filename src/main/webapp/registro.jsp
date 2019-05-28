@@ -2,11 +2,7 @@
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-<head>
-	<title>Login </title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--===============================================================================================-->	
+<!--==================================estilos Login =============================================================-->	
 	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
@@ -27,11 +23,10 @@
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<!--================ estilos  =================-->
+<!--================ estilos  =================-->
 		<%@include file="estructura/urlsEstilos.jsp" %>
-</head>
-<body>
 
+<body>
 
 <!--================ Start Header Menu Area =================-->
 	<%@include file="estructura/header.jsp" %>
@@ -40,34 +35,58 @@
 <div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
-				<form action="validarLogin" method="post" class="login100-form validate-form">
+				<form action="registro" method="post" class="login100-form validate-form">
 					<span class="login100-form-title p-b-49">
-						Login
+						Registro 
 					</span>
 
-					<div class="wrap-input100 validate-input m-b-23" data-validate = "Username is reauired">
-						<span class="label-input100">Username</span>
-						<input class="input100" type="text" name="usuario" placeholder="Type your username">
+					<div class="wrap-input100 validate-input m-b-23" data-validate = "Ingrese Usuario">
+						<span class="label-input100">Nombre Completo</span>
+						<input class="input100" type="text" name="paciente.nombreCompleto" placeholder="Nombre">
 						<span class="focus-input100" data-symbol="&#xf206;"></span>
 					</div>
+					<div class="wrap-input100 validate-input m-b-23" data-validate = "Ingrese sus Apellidos">
+						<span class="label-input100">DNI</span>
+						<input class="input100" type="text" name="paciente.dni" placeholder="Apellidos">
+						<span class="focus-input100" data-symbol="&#xf206;"></span>
+					</div>
+					<div class="wrap-input100 validate-input m-b-23" data-validate = "Ingrese su Correo">
+						<span class="label-input100">Correo</span>
+						<input class="input100" type="text" name="paciente.correo" placeholder="example@gmail.com">
+						<span class="focus-input100" data-symbol="&#x2709;"></span>
+					</div>
+					<div class="wrap-input100 validate-input m-b-23" data-validate = "Ingrese su Celular">
+						<span class="label-input100">Direccion</span>
+						<input class="input100" type="text" name="paciente.direccion" placeholder="Celular">
+						<span class="focus-input100" data-symbol="&#x2706;"></span>
+					</div>
+					<div class="wrap-input100 validate-input m-b-23" data-validate = "Ingrese su Celular">
+						<span class="label-input100">Fecha Nacimineto</span>
+						<input class="input100" type="text" name="paciente.fecha_nacimiento" placeholder="Celular">
+						<span class="focus-input100" data-symbol="&#x2706;"></span>
+					</div>
+					
+					<div class="wrap-input100 validate-input m-b-23" data-validate = "Ingrese su Celular">
+						<span class="label-input100">Celular</span>
+						<input class="input100" type="text" name="paciente.celular" placeholder="Celular">
+						<span class="focus-input100" data-symbol="&#x2706;"></span>
+					</div>
 
-					<div class="wrap-input100 validate-input" data-validate="Password is required">
+					<div class="wrap-input100 validate-input" data-validate="Ingrese su Contraseña">
 						<span class="label-input100">Contraseña</span>
-						<input class="input100" type="password" name="password" placeholder="Type your password">
+						<input class="input100" type="password" name="paciente.clave" placeholder="Contraseña">
 						<span class="focus-input100" data-symbol="&#xf190;"></span>
 					</div>
-					
+					<input class="input100" type="hidden" name="paciente.estado" value="H">
 					<div class="text-right p-t-8 p-b-31">
-						<a href="#">
-							Olvido su contraseña?
-						</a>
+						
 					</div>
-					
+
 					<div class="container-login100-form-btn">
 						<div class="wrap-login100-form-btn">
 							<div class="login100-form-bgbtn"></div>
 							<button class="login100-form-btn">
-								Iniciar Sesion
+								Registrarse
 							</button>
 						</div>
 					</div>
@@ -94,20 +113,26 @@
 
 					<div class="flex-col-c p-t-155">
 						<span class="txt1 p-b-17">
-							¿aún no tienes cuenta?
+							ya tienes una cuenta?
 						</span>
 
-						<a href="registro.jsp" class="txt2">
-							Regístrate
+						<a href="login.jsp" class="txt2">
+							Inicia Sesion
 						</a>
+						
 					</div>
+
+
 				</form>
 			</div>
 		</div>
 	</div>
 	
+	
 
 	<div id="dropDownSelect1"></div>
+	
+	
 		<!--================ Start footer Area  =================-->
 		<%@include file="estructura/footer.jsp" %>
 	<!--================ End footer Area  =================-->
@@ -127,9 +152,7 @@
 	<script src="vendor/countdowntime/countdowntime.js"></script>
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
-	
-		<!--================ scripts  =================-->
+	<!--================ scripts  =================-->
 	<%@include file="estructura/urlScripts.jsp" %>
-	
 </body>
 </html>
