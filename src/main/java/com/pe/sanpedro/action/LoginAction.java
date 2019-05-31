@@ -1,9 +1,8 @@
 package com.pe.sanpedro.action;
 
-import java.util.Map;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.apache.struts2.dispatcher.SessionMap;
 
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
@@ -16,13 +15,13 @@ public class LoginAction extends ActionSupport {
 
 	private String usuario, password;
 	private static final Logger logger = LogManager.getLogger(LoginAction.class);
-	private Map<String, Object> session = ActionContext.getContext().getSession();
-
+	private SessionMap<String, Object> session = (SessionMap<String, Object>) ActionContext.getContext().getSession();
 	public String validar() {
-		logger.info("Ingreso al sistema");
+//		logger.info("Ingreso al sistema");
 		UsuarioService service = new UsuarioService();
-		Usuario user = service.validarLogin(usuario, password);
+		Usuario user = service.login(usuario, password);
 		if (user instanceof Usuario) {
+			session.put("user", usuario);
 			return SUCCESS;
 		} else {
 			return ERROR;
@@ -30,9 +29,8 @@ public class LoginAction extends ActionSupport {
 	}
 
 	public String logout() {
-//		sessionMap.remove("idUsuario");
-//		sessionMap.invalidate();
-		return "SUCCESS";
+        session.invalidate();
+        return SUCCESS;
 	}
 
 	public String getUsuario() {
@@ -51,13 +49,16 @@ public class LoginAction extends ActionSupport {
 		this.password = password;
 	}
 
-	public Map<String, Object> getSession() {
+	public SessionMap<String, Object> getSession() {
 		return session;
 	}
 
-	public void setSession(Map<String, Object> session) {
+	public void setSession(SessionMap<String, Object> session) {
 		this.session = session;
 	}
-	
+
+	public static Logger getLogger() {
+		return logger;
+	}
 	
 }

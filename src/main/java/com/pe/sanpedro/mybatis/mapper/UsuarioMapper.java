@@ -6,5 +6,5 @@ import com.pe.sanpedro.model.Usuario;
 
 public interface UsuarioMapper {
 
-	public Usuario validarLogin(HashMap<Object, Object>params) throws Exception;
+	public Usuario login(HashMap<Object, Object>params) throws Exception;
 }

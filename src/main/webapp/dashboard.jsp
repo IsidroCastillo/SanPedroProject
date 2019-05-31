@@ -6,10 +6,10 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>Dashboard</title>
+<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
 </head>
 <body>
-	<h2>Bienvenido</h2>
-	<s:property value="usuario"/>
+	Bienvenido <s:property value="#session.user"/> | <s:a class="btn btn-primary btn-sm" href="logout">Cerrar Sessión</s:a>
 </body>
 </html>

@@ -5,15 +5,20 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
  "http://mybatis.org/dtd/mybatis-3-config.dtd">
 
 <configuration>
-	
+	<typeAliases>
+		<typeAlias type="com.pe.sanpedro.model.paciente"
+			alias="Paciente" />
+		<typeAlias type="com.pe.sanpedro.model.Usuario"
+			alias="Usuario" />
+	</typeAliases>
 	<environments default="clase">
 		<environment id="clase">
 			<transactionManager type="JDBC" />
 			<dataSource type="UNPOOLED">
 				<property name="driver" value="com.mysql.jdbc.Driver" />
-				<property name="url" value="jdbc:mysql://localhost/clinica" />
+				<property name="url" value="jdbc:mysql://localhost/dbsanpedro" />
 				<property name="username" value="root" />
-				<property name="password" value="mysql" />
+				<property name="password" value="" />
 			</dataSource>
 		</environment>
 	</environments>

@@ -10,15 +10,15 @@ import com.pe.sanpedro.mybatis.mapper.UsuarioMapper;
 
 public class UsuarioService {
 	
-	public Usuario validarLogin(String usuario, String password) {
+	public Usuario login(String username, String password) {
 		Usuario user = null;
 		SqlSession session = MyBatisUtil.getSqlSessionFactory().openSession();
 		try {
 			UsuarioMapper mapper = session.getMapper(UsuarioMapper.class);
 			HashMap<Object, Object> parameters = new HashMap<>();
-			parameters.put("usuario", usuario);
-			parameters.put("password", password);
-			user = mapper.validarLogin(parameters);
+			parameters.put("user", username);
+			parameters.put("pwd", password);
+			user = mapper.login(parameters);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}finally {

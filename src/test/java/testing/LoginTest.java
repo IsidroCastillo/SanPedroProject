@@ -6,12 +6,12 @@ import org.junit.Test;
 import com.opensymphony.xwork2.ActionProxy;
 import com.pe.sanpedro.action.LoginAction;
 
-public class LoginTest extends StrutsTestCase {
+public class LoginTest extends StrutsTestCase{
 
 	@Test
-	public void test() throws Exception {
-		request.addParameter("usuario", "isidro");
-		request.addParameter("password", "abcd");
+	public void test2() throws Exception {
+		request.addParameter("user", "admin");
+		request.addParameter("pwd", "123abc");
 		ActionProxy proxy = getActionProxy("/login.action");
 		LoginAction loginAction = (LoginAction) proxy.getAction(); 
 		proxy.execute();
@@ -19,12 +19,14 @@ public class LoginTest extends StrutsTestCase {
 	}
 	
 	@Test
-	public void tes() throws Exception {
-		request.addParameter("usuario", "isidro");
-		request.addParameter("password", "abc");
+	public void test3() throws Exception {
+		request.addParameter("user", "admi");
+		request.addParameter("pwd", "123a");
 		ActionProxy proxy = getActionProxy("/login.action");
 		LoginAction loginAction = (LoginAction) proxy.getAction(); 
 		proxy.execute();
 		assertEquals(loginAction.execute(), "error");
 	}
+
+
 }
