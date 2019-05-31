@@ -1,15 +1,14 @@
 package com.pe.sanpedro.model;
 
-import java.util.Date;
-
 public class Usuario {
 
 	private int idUsuario;
 	private String usuario;
 	private String password;
-	private int id_tipo_usuario;
-	private Date fechaCreacion;
 	private String estado;
+	private int id_tipo_usuario;
+	
+	
 	public int getIdUsuario() {
 		return idUsuario;
 	}
@@ -33,12 +32,6 @@ public class Usuario {
 	}
 	public void setId_tipo_usuario(int id_tipo_usuario) {
 		this.id_tipo_usuario = id_tipo_usuario;
-	}
-	public Date getFechaCreacion() {
-		return fechaCreacion;
-	}
-	public void setFechaCreacion(Date fechaCreacion) {
-		this.fechaCreacion = fechaCreacion;
 	}
 	public String getEstado() {
 		return estado;

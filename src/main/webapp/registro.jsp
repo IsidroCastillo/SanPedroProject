@@ -47,7 +47,7 @@
 					</div>
 					<div class="wrap-input100 validate-input m-b-23" data-validate = "Ingrese sus Apellidos">
 						<span class="label-input100">DNI</span>
-						<input class="input100" type="text" name="dni" placeholder="Apellidos">
+						<input class="input100" type="text" name="dni" placeholder="DNI">
 						<span class="focus-input100" data-symbol="&#xf206;"></span>
 					</div>
 					<div class="wrap-input100 validate-input m-b-23" data-validate = "Ingrese su Correo">
@@ -62,7 +62,7 @@
 					</div>
 					<div class="wrap-input100 validate-input m-b-23" data-validate = "Ingrese su Celular">
 						<span class="label-input100">Fecha Nacimineto</span>
-						<input class="input100" type="text" name="fechaNac" placeholder="Celular">
+						<input class="input100" type="text" name="fechaNac" placeholder="Fecha de Nacimiento">
 						<span class="focus-input100" data-symbol="&#x2706;"></span>
 					</div>
 					

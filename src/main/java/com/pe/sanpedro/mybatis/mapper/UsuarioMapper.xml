@@ -4,8 +4,8 @@
 <mapper namespace="com.pe.sanpedro.mybatis.mapper.UsuarioMapper">
 
 	<select id="login" parameterType="java.util.Map" resultType="Usuario">
-		select idUsuario,usuario,password,id_tipo_usuario,fechaCreacion,estado
-		 from usuario where usuario = #{user} and password = #{pwd}
+		select idUsuario,usuario,contraseña,estado,tipousuario_idTipoUsuario
+		 from usuario where usuario = #{user} and contraseña = #{pwd}
 	</select>
 	
 </mapper>
