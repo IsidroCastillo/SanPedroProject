@@ -42,42 +42,46 @@
 
 					<div class="wrap-input100 validate-input m-b-23" data-validate = "Ingrese Usuario">
 						<span class="label-input100">Nombre Completo</span>
-						<input class="input100" type="text" name="paciente.nombreCompleto" placeholder="Nombre">
+						<input class="input100" type="text" name="nombreCompleto" placeholder="Nombre">
 						<span class="focus-input100" data-symbol="&#xf206;"></span>
 					</div>
 					<div class="wrap-input100 validate-input m-b-23" data-validate = "Ingrese sus Apellidos">
 						<span class="label-input100">DNI</span>
-						<input class="input100" type="text" name="paciente.dni" placeholder="Apellidos">
+						<input class="input100" type="text" name="dni" placeholder="Apellidos">
 						<span class="focus-input100" data-symbol="&#xf206;"></span>
 					</div>
 					<div class="wrap-input100 validate-input m-b-23" data-validate = "Ingrese su Correo">
 						<span class="label-input100">Correo</span>
-						<input class="input100" type="text" name="paciente.correo" placeholder="example@gmail.com">
+						<input class="input100" type="text" name="correo" placeholder="example@gmail.com">
 						<span class="focus-input100" data-symbol="&#x2709;"></span>
 					</div>
 					<div class="wrap-input100 validate-input m-b-23" data-validate = "Ingrese su Celular">
 						<span class="label-input100">Direccion</span>
-						<input class="input100" type="text" name="paciente.direccion" placeholder="Celular">
+						<input class="input100" type="text" name="direccion" placeholder="Celular">
 						<span class="focus-input100" data-symbol="&#x2706;"></span>
 					</div>
 					<div class="wrap-input100 validate-input m-b-23" data-validate = "Ingrese su Celular">
 						<span class="label-input100">Fecha Nacimineto</span>
-						<input class="input100" type="text" name="paciente.fecha_nacimiento" placeholder="Celular">
+						<input class="input100" type="text" name="fechaNac" placeholder="Celular">
 						<span class="focus-input100" data-symbol="&#x2706;"></span>
 					</div>
 					
 					<div class="wrap-input100 validate-input m-b-23" data-validate = "Ingrese su Celular">
 						<span class="label-input100">Celular</span>
-						<input class="input100" type="text" name="paciente.celular" placeholder="Celular">
+						<input class="input100" type="text" name="celular" placeholder="Celular">
 						<span class="focus-input100" data-symbol="&#x2706;"></span>
 					</div>
-
+					<div class="wrap-input100 validate-input m-b-23" data-validate = "Ingrese Usuario">
+						<span class="label-input100">Usuario</span>
+						<input class="input100" type="text" name="usuario" placeholder="Nombre">
+						<span class="focus-input100" data-symbol="&#xf206;"></span>
+					</div>
 					<div class="wrap-input100 validate-input" data-validate="Ingrese su Contraseña">
 						<span class="label-input100">Contraseña</span>
-						<input class="input100" type="password" name="paciente.clave" placeholder="Contraseña">
+						<input class="input100" type="password" name="clave" placeholder="Contraseña">
 						<span class="focus-input100" data-symbol="&#xf190;"></span>
 					</div>
-					<input class="input100" type="hidden" name="paciente.estado" value="H">
+					<input class="input100" type="hidden" name="" value="H">
 					<div class="text-right p-t-8 p-b-31">
 						
 					</div>

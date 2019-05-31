@@ -13,10 +13,19 @@
 		<result name="success">/dashboard.jsp</result>
 		<result name="error">/error.jsp</result>
 	</action>
+	
+		<action name="registro" class="com.pe.sanpedro.action.pacienteAction" method="registrarPaciente">
+			<result name="exito">/inicio.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+	
 
 	<action name="logout" class="com.pe.sanpedro.action.LoginAction" method="logout">
 			<result name="LOGOUT">/index.jsp</result>
-		</action>		
+	</action>
+		
+	
+				
 	</package>
 
 </struts>

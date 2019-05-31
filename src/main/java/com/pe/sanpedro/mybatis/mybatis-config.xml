@@ -11,15 +11,16 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 			<transactionManager type="JDBC" />
 			<dataSource type="UNPOOLED">
 				<property name="driver" value="com.mysql.jdbc.Driver" />
-				<property name="url" value="jdbc:mysql://localhost/dbsanpedro" />
+				<property name="url" value="jdbc:mysql://localhost/clinica" />
 				<property name="username" value="root" />
-				<property name="password" value="" />
+				<property name="password" value="mysql" />
 			</dataSource>
 		</environment>
 	</environments>
 	
 	<mappers>
 		<mapper resource="com/pe/sanpedro/mybatis/mapper/UsuarioMapper.xml"/>
+		<mapper resource="com/pe/sanpedro/mybatis/mapper/PacienteMapper.xml"/>
 	</mappers>
 
 </configuration>
