@@ -5,9 +5,7 @@ import com.pe.sanpedro.model.*;
 import com.pe.sanpedro.service.pacienteService;
 
 public class pacienteAction extends ActionSupport {
-	/**
-	 * 
-	 */
+
 	private static final long serialVersionUID = 1L;
 
 	private paciente paciente;

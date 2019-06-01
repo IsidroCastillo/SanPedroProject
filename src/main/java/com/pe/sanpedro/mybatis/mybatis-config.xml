@@ -28,6 +28,7 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 	<mappers>
 		<mapper resource="com/pe/sanpedro/mybatis/mapper/UsuarioMapper.xml"/>
 		<mapper resource="com/pe/sanpedro/mybatis/mapper/PacienteMapper.xml"/>
+		<mapper resource="com/pe/sanpedro/mybatis/mapper/HorarioMedicoMapper.xml"/>
 	</mappers>
 
 </configuration>

@@ -36,28 +36,51 @@
 <link rel="stylesheet" type="text/css" href="css/main.css">
 <!--================ estilos  =================-->
 <%@include file="estructura/urlsEstilos.jsp"%>
-<style type="text/css">
-	.a .a:hover{
-		background-color: red;
-	}
-</style>
+
 </head>
 <body>
 
 	<!--================ Start Header Menu Area =================-->
 
 	<!--================ End Header Menu Area =================-->
+	<header class="header_area">
 
+	<div class="header-top">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-3 col-sm-6 col-4 header-top-left">
+					<select class="default-select">
+						<option data-display="English">English</option>
+						<option value="1">Germany</option>
+						<option value="2">Spanish</option>
+					</select>
+				</div>
+				<div class="col-lg-9 col-sm-6 col-8 header-top-right">
+					<a href="tel:+9530123654896"><span
+						class="lnr lnr-phone-handset"></span> <span class="text"><span
+							class="text">+953 012 3654 896</span></span></a> <a
+						href="mailto:support@colorlib.com"><span
+						class="lnr lnr-envelope"></span> <span class="text"><span
+							class="text">support@colorlib.com</span></span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	</header>
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
 				<form action="login" method="post"
 					class="login100-form validate-form">
-					<span class="login100-form-title p-b-49"> Login </span>
+					<div class="text-center">
+						<span class="txt1 p-b-0"> </span> <a href="listado.jsp"
+							class="txt2">Horario </a>
+					</div>
+					<span class="login100-form-title p-b-10"> Login </span>
 
 					<div class="wrap-input100 validate-input m-b-23"
 						data-validate="Username is reauired">
-						<span class="label-input100">Username</span> <input
+						<span class="label-input100">Usuario</span> <input
 							class="input100" type="text" name="usuario"
 							placeholder="Type your username"> <span
 							class="focus-input100" data-symbol="&#xf206;"></span>
@@ -72,7 +95,7 @@
 					</div>
 
 					<div class="text-right p-t-8 p-b-31">
-						<a href="#"> Olvido su contraseña? </a>
+						<a href="#"> ?Olvido su contraseña? </a>
 					</div>
 
 					<div class="container-login100-form-btn">
@@ -82,13 +105,13 @@
 						</div>
 					</div>
 					<div class="flex-col-c p-t-70 a">
-						<span class="txt1 p-b-0"> </span> <a
-							href="registro.jsp" class="txt2">¿aún no tienes cuenta?  Regístrate </a>
+						<span class="txt1 p-b-0"> </span> <a href="registro.jsp"
+							class="txt2">¿aún no tienes cuenta? Regístrate </a>
 					</div>
 					<div class="txt1 text-center p-t-54 p-b-20">
 						<span> Redes Sociales </span>
 					</div>
-					
+
 					<div class="flex-c-m">
 						<a href="#" class="login100-social-item bg1"> <i
 							class="fa fa-facebook"></i>
@@ -107,28 +130,18 @@
 
 
 	<div id="dropDownSelect1"></div>
-	<!--================ Start footer Area  =================-->
-	<%@include file="estructura/footer.jsp"%>
-	<!--================ End footer Area  =================-->
+	<!--================ Start footer Area  =================--> <%@include
+		file="estructura/footer.jsp"%> <!--================ End footer Area  =================-->
 	<!--===============================================================================================-->
-	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-	<!--===============================================================================================-->
-	<script src="vendor/animsition/js/animsition.min.js"></script>
-	<!--===============================================================================================-->
-	<script src="vendor/bootstrap/js/popper.js"></script>
-	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-	<!--===============================================================================================-->
-	<script src="vendor/select2/select2.min.js"></script>
-	<!--===============================================================================================-->
-	<script src="vendor/daterangepicker/moment.min.js"></script>
-	<script src="vendor/daterangepicker/daterangepicker.js"></script>
-	<!--===============================================================================================-->
-	<script src="vendor/countdowntime/countdowntime.js"></script>
-	<!--===============================================================================================-->
-	<script src="js/main.js"></script>
-
-	<!--================ scripts  =================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script> <!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script> <!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script> <script
+		src="vendor/bootstrap/js/bootstrap.min.js"></script> <!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script> <!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script> <script
+		src="vendor/daterangepicker/daterangepicker.js"></script> <!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script> <!--===============================================================================================-->
+	<script src="js/main.js"></script> <!--================ scripts  =================-->
 	<%@include file="estructura/urlScripts.jsp"%>
-
 </body>
 </html>

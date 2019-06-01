@@ -17,7 +17,7 @@ public class LoginAction extends ActionSupport {
 	private static final Logger logger = LogManager.getLogger(LoginAction.class);
 	private SessionMap<String, Object> session = (SessionMap<String, Object>) ActionContext.getContext().getSession();
 	public String validar() {
-//		logger.info("Ingreso al sistema");
+		logger.info("Ingreso al sistema");
 		UsuarioService service = new UsuarioService();
 		Usuario user = service.login(usuario, password);
 		if (user instanceof Usuario) {

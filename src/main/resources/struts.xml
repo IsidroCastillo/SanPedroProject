@@ -6,23 +6,32 @@
 
 	<constant name="struts.devMode" value="true" />
 
-	<package name="default" namespace="/" 
-		extends="struts-default, json-default, tiles-default" >
+	<package name="default" namespace="/"
+		extends="struts-default, json-default, tiles-default">
 
-		<action name="registro" class="com.pe.sanpedro.action.pacienteAction" method="registrarPaciente">
+		<action name="registro"
+			class="com.pe.sanpedro.action.pacienteAction"
+			method="registrarPaciente">
 			<result name="exito">/inicio.jsp</result>
 			<result name="error">/error.jsp</result>
 		</action>
-	
-		<action name="login" class="com.pe.sanpedro.action.LoginAction" method="validar">
-		<result name="success">/dashboard.jsp</result>
-		<result name="error">/error.jsp</result>
-	</action>
-	<action name="logout" class="com.pe.sanpedro.action.LoginAction" method="logout">
-		<result name="success">/login.jsp</result>
-		<result name="error">/error.jsp</result>
-	</action>
 
+		<action name="login" class="com.pe.sanpedro.action.LoginAction"
+			method="validar">
+			<result name="success">/dashboard.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		<action name="logout"
+			class="com.pe.sanpedro.action.LoginAction" method="logout">
+			<result name="success">/login.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		<action name="listando"
+			class="com.pe.sanpedro.action.HorarioAction" method="listar">
+			<result name="success">/listado.jsp</result>
+			<result name="error">/error.jsp</result>
+
+		</action>
 	</package>
 
 </struts>

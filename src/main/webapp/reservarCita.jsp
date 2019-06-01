@@ -40,6 +40,16 @@
 <link rel="stylesheet" type="text/css" href="css/main.css">
 <!--================ estilos  =================-->
 <%@include file="estructura/urlsEstilos.jsp"%>
+<style>
+		.btn-brand{
+			background-color: #9043FF;
+			color: white;	
+		}
+		.btn-brand:hover{
+			background-color:#7734FE;
+			color: white;
+		}
+	</style>
 <body>
 	<header class="header_area">
 	<div class="header-top">
@@ -90,11 +100,11 @@
 			<div class="collapse navbar-collapse offset"
 				id="navbarSupportedContent">
 				<ul class="nav navbar-nav menu_nav ml-auto">
-					<li class="nav-item active"><a class="nav-link"
-						href="dashboard.jsp">Inicio</a></li>
+					<li class="nav-item"><a class="nav-link"
+						href="dashboard.jsp" >Inicio</a></li>
 					<li class="nav-item"><a class="nav-link" href="about-us.html">Tarjeta
 							de Salud San Pedro</a></li>
-					<li class="nav-item"><a class="nav-link"
+					<li class="nav-item active"><a class="nav-link"
 						href="reservarCita.jsp">Reservar Cita</a></li>
 
 					<li class="nav-item submenu dropdown"><a href="#"
@@ -106,31 +116,82 @@
 								href="single-blog.html">Noticios</a></li>
 						</ul></li>
 					<li class="nav-item"><a class="nav-link" href="contact.html">Contáctanos</a></li>
-					<li class="nav-item submenu dropdown" style="margin-left: 40px;">
+					<li class="nav-item submenu dropdown" style="margin-left: 45px;">
 						<a class="nav-link dropdown-toggle dropbtn" data-toggle="dropdown">
 							<s:property value="#session.user" />
 					</a>
 						<div class="dropdown-content">
 							<ul class="dropdown-menu">
 								<li class="nav-item"><s:a class="nav-link" href="#">Actualizar mi cuenta</s:a></li>
-								<li class="nav-item"><s:a class="nav-link"
-										href="#">Cambiar mi clave</s:a></li>
+								<li class="nav-item"><s:a class="nav-link" href="#">Cambiar mi clave</s:a></li>
 								<li class="nav-item"><s:a class="nav-link" href="logout">Cerrar sesión</s:a></li>
 							</ul>
 						</div>
 					</li>
 				</ul>
 				<ul class="nav navbar-nav ml-auto">
+
 				</ul>
+
 			</div>
 		</div>
 	</div>
 	</header>
-	<!--===============================================================================================-->
-	
-	<h2 class="text-center">Bienvenido: <s:property value="#session.user" /></h2>
-	<p class="text-center" style="font-size: 15px;">Aquí podrás reservar, pagar, reprogramar tus citas y acceder a tu información de manera fácil y segura.</p>
-	
+
+	<h2 class="text-center">Reservar Cita</h2>
+	<br>
+	<div class="container" >
+		<form action="" style=" background-color:#F2F2F2; padding: 5%; ">
+			<!-- primera fila -->
+			<div class="form-group">
+				<div class="row">
+					<div class="col-md-4">
+						<input  class="form-control"type="text" name="nombres" placeholder="Nombres">
+					</div>
+					<div class="col-md-4">
+						<input  class="form-control"type="text" name="apellidos" placeholder="Apellidos">
+					</div>
+					<div class="col-md-4">
+						<input  class="form-control"type="date" name="nacimiento" placeholder="Fecha de nacimiento">
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="row">
+					<div class="col-md-4">
+						<select class="form-control">
+							<option>Femenino</option>
+							<option>Masculino</option>
+						</select>
+					</div>
+					<div class="col-md-4">
+						<input  class="form-control" type="text" name="rh" placeholder="RH">
+					</div>
+					<div class="col-md-4">	
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="row">
+					<div class="col-md-4">
+						<select  class="form-control">
+							<option>Registro civil</option>
+							<option>Tarjeta de identidad</option>
+							<option>Cedula</option>
+						</select>
+					</div>
+					<div class="col-md-4">
+						<input  class="form-control"type="number" name="ndocumento" placeholder="Numero de documentó">
+					</div>
+					<div class="col-md-4">
+						<input class="form-control" type="date" name="expedicion" placeholder="Expedición">
+					</div>
+				</div>
+			</div>
+			<button class="btn btn-brand" type="submit">Guardar</button>
+		</form>
+	</div>
+<!-- g -->
 	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
 	<!--===============================================================================================-->
 	<script src="vendor/animsition/js/animsition.min.js"></script>

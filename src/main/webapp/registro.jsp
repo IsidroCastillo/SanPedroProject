@@ -61,8 +61,8 @@
 						<span class="focus-input100" data-symbol="&#x2706;"></span>
 					</div>
 					<div class="wrap-input100 validate-input m-b-23" data-validate = "Ingrese su Celular">
-						<span class="label-input100">Fecha Nacimineto</span>
-						<input class="input100" type="text" name="fechaNac" placeholder="Fecha de Nacimiento">
+						<span class="label-input100">Fecha Nacimiento</span>
+						<input class="input100" type="date" name="fechaNac" >
 						<span class="focus-input100" data-symbol="&#x2706;"></span>
 					</div>
 					

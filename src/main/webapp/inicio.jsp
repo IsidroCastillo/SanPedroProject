@@ -21,9 +21,9 @@
 				<div class="banner_content">
 				<span><s:property value="msj" /></span><br><br>
 					<h2>
-						Growing up your <br>
-						children with our most <br>
-						smart monitization <br>
+						Haciendo crecer a tus hijos<br>
+						 con nuestra monetización<br>
+						más inteligente.
 					</h2>
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
@@ -200,56 +200,16 @@
 						<h4>Plastic Surgery</h4>
 					</div>
 				</div>
-				<a class="primary-btn text-uppercase" href="#">Learn More</a>
 			</div>
 		</div>
 	</section>
-	<!--================ End Department Area =================-->
 
-	<!--================ Start Counter Area =================-->
-	<section class="section_gap counter_area overlay">
-		<div class="container">
-			<div class="row">
-				<!--single-counter-->
-				<div class="col-lg-3 col-sm-6">
-					<div class="single_counter">
-						<h1> <span class="counter_number">30</span>K</h1>
-						<p>Years <br> of Experiences</p>
-					</div>
-				</div>
-				<!--single-counter-->
-				<div class="col-lg-3 col-sm-6">
-					<div class="single_counter">
-						<h1> <span class="counter_number">2</span>K+</h1>
-						<p>Instant <br> Blood Donors </p>
-					</div>
-				</div>
-				<!--single-counter-->
-				<div class="col-lg-3 col-sm-6">
-					<div class="single_counter">
-						<h1> <span class="counter_number">5</span>K+</h1>
-						<p>Well Cured <br> Patients</p>
-					</div>
-				</div>
-				<!--single-counter-->
-				<div class="col-lg-3 col-sm-6">
-					<div class="single_counter">
-						<h1> <span class="counter_number">20</span>K+</h1>
-						<p>Internal <br> Stuff Groups</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--================ Start Counter Area =================-->
-
-	<!--================ Start Team Area =================-->
 	<section class="section_gap team_area lite_bg">
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-lg-7">
 					<div class="main_title">
-						<h2>Medicare Popular Departments</h2>
+						<h2>Médicos de la Clínica</h2>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
 							magna aliqua.</p>
 					</div>
