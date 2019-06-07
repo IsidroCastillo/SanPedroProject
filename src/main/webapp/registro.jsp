@@ -71,11 +71,7 @@
 						<input class="input100" type="text" name="celular" placeholder="Celular">
 						<span class="focus-input100" data-symbol="&#x2706;"></span>
 					</div>
-					<div class="wrap-input100 validate-input m-b-23" data-validate = "Ingrese Usuario">
-						<span class="label-input100">Usuario</span>
-						<input class="input100" type="text" name="usuario" placeholder="Nombre">
-						<span class="focus-input100" data-symbol="&#xf206;"></span>
-					</div>
+					
 					<div class="wrap-input100 validate-input" data-validate="Ingrese su Contraseña">
 						<span class="label-input100">Contraseña</span>
 						<input class="input100" type="password" name="clave" placeholder="Contraseña">

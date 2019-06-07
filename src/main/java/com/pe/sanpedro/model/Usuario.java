@@ -8,6 +8,10 @@ public class Usuario {
 	private String estado;
 	private int id_tipo_usuario;
 	
+	private String nombre,correo,direccion,fecha_nac,celular;
+	
+	
+	
 	
 	public int getIdUsuario() {
 		return idUsuario;
@@ -39,5 +43,38 @@ public class Usuario {
 	public void setEstado(String estado) {
 		this.estado = estado;
 	}
+	public String getNombre() {
+		return nombre;
+	}
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+	public String getCorreo() {
+		return correo;
+	}
+	public void setCorreo(String correo) {
+		this.correo = correo;
+	}
+	public String getDireccion() {
+		return direccion;
+	}
+	public void setDireccion(String direccion) {
+		this.direccion = direccion;
+	}
+	public String getFecha_nac() {
+		return fecha_nac;
+	}
+	public void setFecha_nac(String fecha_nac) {
+		this.fecha_nac = fecha_nac;
+	}
+	public String getCelular() {
+		return celular;
+	}
+	public void setCelular(String celular) {
+		this.celular = celular;
+	}
+	
+	
+	
 	
 }

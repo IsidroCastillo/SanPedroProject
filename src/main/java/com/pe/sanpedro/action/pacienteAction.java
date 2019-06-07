@@ -21,7 +21,7 @@ public class pacienteAction extends ActionSupport {
 		try {
 					
 			pacienteService ps = new pacienteService();
-			int registro = ps.registrarPaciente(usuario,clave, "H", 2,nombreCompleto,dni,correo,direccion,fechaNac,celular,"H");
+			int registro = ps.registrarPaciente(dni,clave, "H", 2,nombreCompleto,dni,correo,direccion,fechaNac,celular,"H");
 					
 			if(registro != 0){
 				//setMsj("Registrado");

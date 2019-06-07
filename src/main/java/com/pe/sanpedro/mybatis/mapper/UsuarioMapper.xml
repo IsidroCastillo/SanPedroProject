@@ -5,7 +5,8 @@
 
 	<select id="login" parameterType="java.util.Map"
 		resultType="Usuario">
-		select u.idUsuario,u.usuario,u.contraseña,u.estado,u.tipousuario_idTipoUsuario
+		select u.idUsuario as idUsuario ,u.usuario as usuario,u.contraseña as password,
+		u.estado estado,u.tipousuario_idTipoUsuario as id_tipo_usuario, p.nombrecompleto as nombre,p.correo as correo, p.direccion as direccion,p.fecha_nacimiento as fecha_nac, p.celular as celular
 		from usuario u inner join
 		paciente p on u.idUsuario=p.usuario_idUsuario
 		where usuario = #{user} and contraseña = #{pwd}

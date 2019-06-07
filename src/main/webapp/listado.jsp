@@ -19,7 +19,7 @@
 		<center>
 			<h1>Listado de Horarios</h1>
 		</center>
-		<a class="btn btn-primary" href="listando">Ver Lista</a>
+	
 
 	</div>
 	<div class="whole-wrap">

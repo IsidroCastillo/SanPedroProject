@@ -73,7 +73,7 @@
 				<form action="login" method="post"
 					class="login100-form validate-form">
 					<div class="text-center">
-						<span class="txt1 p-b-0"> </span> <a href="listado.jsp"
+						<span class="txt1 p-b-0"> </span> <a href="listando"
 							class="txt2">Horario </a>
 					</div>
 					<span class="login100-form-title p-b-10"> Login </span>

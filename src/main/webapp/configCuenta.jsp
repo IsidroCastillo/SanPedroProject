@@ -1,3 +1,4 @@
+<%@taglib uri="/struts-tags" prefix="s"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -28,25 +29,42 @@
                           
 
                             <div class="form-group">
-                                <label class="col-md-2 col-sm-3 col-xs-12 control-label">Nombre</label>
+                                <label class="col-md-2 col-sm-3 col-xs-12 control-label">Nombre Completo:</label>
                                 <div class="col-md-10 col-sm-9 col-xs-12">
-                                    <input name="txt_nombre" type="text" class="form-control" value="">
+                                    <input name="txt_nombre" type="text" class="form-control" value="<s:property value="#session.nombre"/>">
                                 </div>
                             </div>
 
                             <div class="form-group">
-                                <label class="col-md-2 col-sm-3 col-xs-12 control-label">Apellidos</label>
+                                <label class="col-md-2 col-sm-3 col-xs-12 control-label">DNI:</label>
                                 <div class="col-md-10 col-sm-9 col-xs-12">
-                                    <input name="txt_apellidos" type="text" class="form-control" value="">
+                                    <input name="txt_apellidos" type="text" class="form-control" value="<s:property value="#session.user"/>">
                                 </div>
                             </div>
+                            
+                            
+                            <div class="form-group">
+                                <label class="col-md-2 col-sm-3 col-xs-12 control-label">Direccion:</label>
+                                <div class="col-md-10 col-sm-9 col-xs-12">
+                                    <input name="txt_apellidos" type="text" class="form-control" value="<s:property value="#session.direccion"/>">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="col-md-2 col-sm-3 col-xs-12 control-label">Fecha Nacimiento:</label>
+                                <div class="col-md-10 col-sm-9 col-xs-12">
+                                    <input name="txt_apellidos" type="text" class="form-control" value="<s:property value="#session.fechaNac"/>">
+                                </div>
+                            </div>
+                            
+                         
 
                             <div class="form-row">
 
                             <div class="form-group">
                                 <label class="col-md-10 col-sm-3 col-xs-12 control-label">Contraseña</label>
                                 <div class="col-md-10 col-sm-9 col-xs-12">
-                                    <input  id="idContra" type="password" class="form-control" value="" >
+                                    <input  id="idContra" type="password" class="form-control" value="<s:property value="#session.pass"/>" >
                                 </div>
 
                             </div>
@@ -73,14 +91,14 @@
                             <div class="form-group">
                                 <label class="col-md-2  col-sm-3 col-xs-12 control-label">Email</label>
                                 <div class="col-md-10 col-sm-9 col-xs-12" >
-                                    <input name="txt_email" type="email" class="form-control" value="">
+                                    <input name="txt_email" type="email" class="form-control" value="<s:property value="#session.correo"/>">
 
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="col-md-2  col-sm-3 col-xs-12 control-label">Celular</label>
                                 <div class="col-md-10 col-sm-9 col-xs-12" >
-                                    <input name="txt_celular" type="text" class="form-control" value="">
+                                    <input name="txt_celular" type="text" class="form-control" value="<s:property value="#session.cel"/>">
 
                                 </div>
                             </div>

@@ -112,7 +112,7 @@
 					</a>
 						<div class="dropdown-content">
 							<ul class="dropdown-menu">
-								<li class="nav-item"><s:a class="nav-link" href="#">Actualizar mi cuenta</s:a></li>
+								<li class="nav-item"><s:a class="nav-link" href="configCuenta.jsp">Actualizar mi cuenta</s:a></li>
 								<li class="nav-item"><s:a class="nav-link"
 										href="#">Cambiar mi clave</s:a></li>
 								<li class="nav-item"><s:a class="nav-link" href="logout">Cerrar sesión</s:a></li>
@@ -129,6 +129,7 @@
 	<!--===============================================================================================-->
 	
 	<h2 class="text-center">Bienvenido: <s:property value="#session.user" /></h2>
+	<h2 class="text-center">Bienvenido: <s:property value="#session.pass" /></h2>
 	<p class="text-center" style="font-size: 15px;">Aquí podrás reservar, pagar, reprogramar tus citas y acceder a tu información de manera fácil y segura.</p>
 	
 	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>

@@ -14,14 +14,27 @@ public class LoginAction extends ActionSupport {
 	private static final long serialVersionUID = 1L;
 
 	private String usuario, password;
+	
+	private String pass;
+	
+
 	private static final Logger logger = LogManager.getLogger(LoginAction.class);
 	private SessionMap<String, Object> session = (SessionMap<String, Object>) ActionContext.getContext().getSession();
 	public String validar() {
 		logger.info("Ingreso al sistema");
 		UsuarioService service = new UsuarioService();
 		Usuario user = service.login(usuario, password);
+		
+		
 		if (user instanceof Usuario) {
-			session.put("user", usuario);
+			session.put("idUsu", user.getUsuario());
+			session.put("user", user.getUsuario());
+			session.put("pass", user.getPassword());
+			session.put("nombre", user.getNombre());
+			session.put("correo",user.getCorreo());
+			session.put("direccion", user.getDireccion());
+			session.put("fechaNac", user.getFecha_nac());
+			session.put("cel", user.getCelular());
 			return SUCCESS;
 		} else {
 			return ERROR;
@@ -61,4 +74,11 @@ public class LoginAction extends ActionSupport {
 		return logger;
 	}
 	
+	public String getPass() {
+		return pass;
+	}
+
+	public void setPass(String pass) {
+		this.pass = pass;
+	}
 }
