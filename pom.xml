@@ -15,7 +15,19 @@
 	</properties>
 
 	<dependencies>
-		<!-- Dependencias para los logs de la aplicacion -->
+		<!-- NUEVOS -->
+		<dependency>
+			<groupId>com.jgeppert.struts2.bootstrap</groupId>
+			<artifactId>struts2-bootstrap-plugin</artifactId>
+			<version>2.5.2</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.jgeppert.struts2.jquery/struts2-jquery-grid-plugin -->
+		<dependency>
+			<groupId>com.jgeppert.struts2.jquery</groupId>
+			<artifactId>struts2-jquery-grid-plugin</artifactId>
+			<version>4.0.3</version>
+		</dependency>
+		<!-- NUEVOS -->
 		<dependency>
 			<groupId>org.apache.struts</groupId>
 			<artifactId>struts2-core</artifactId>

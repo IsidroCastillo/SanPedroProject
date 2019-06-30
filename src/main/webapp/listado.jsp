@@ -8,14 +8,10 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
-<%@include file="estructura/urlsEstilos.jsp"%>
 
 </head>
 <body>
-	<!--================ Start Header Menu Area =================-->
-	<%@include file="estructura/header.jsp"%>
-	<!--================ End Header Menu Area =================-->
-	<div>
+	
 		<center>
 			<h1>Listado de Horarios</h1>
 		</center>
@@ -69,7 +65,5 @@
 	<br>
 	<br>
 
-	<%@include file="estructura/footer.jsp"%>
-	<%@include file="estructura/urlScripts.jsp"%>
 </body>
 </html>

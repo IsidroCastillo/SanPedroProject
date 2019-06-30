@@ -9,17 +9,17 @@
 	<package name="default" namespace="/"
 		extends="struts-default, json-default, tiles-default">
 
-		<action name="registro"
+		<action name="registrar"
 			class="com.pe.sanpedro.action.pacienteAction"
 			method="registrarPaciente">
-			<result name="exito">/login.jsp</result>
+			<result name="exito">/NuevaWeb/login.jsp</result>
 			<result name="error">/error.jsp</result>
 		</action>
 
 		<action name="login" class="com.pe.sanpedro.action.LoginAction"
 			method="validar">
-			<result name="success">/dashboard.jsp</result>
-			<result name="error">/error.jsp</result>
+			<result name="success">/NuevaWeb/principal.jsp</result>
+			<result name="error">/NuevaWeb/login.jsp</result>
 		</action>
 		<action name="logout"
 			class="com.pe.sanpedro.action.LoginAction" method="logout">
@@ -30,8 +30,8 @@
 			class="com.pe.sanpedro.action.HorarioAction" method="listar">
 			<result name="success">/listado.jsp</result>
 			<result name="error">/error.jsp</result>
-
 		</action>
+		
 	</package>
 
 </struts>
